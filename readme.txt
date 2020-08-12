@@ -1,3 +1,5 @@
+https://brendanromandev.github.io/XPSystemConcept/
+
 /// HOW IT WORKS ///
 
 Log Hours And Minutes in the top two boxes. Time will get converted to XP, and the UI will reflect user progresss.
