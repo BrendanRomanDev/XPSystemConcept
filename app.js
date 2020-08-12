@@ -41,7 +41,9 @@ const updateStats = async () => {
 	let currentLvlXPMax = Math.floor(nextLvlStats.runningExpTotal - currentLvlStats.runningExpTotal);
 	let barValue = 0;
 	if (currentLvlXPBase >= currentLvlXPMax) {
-		currentLvl++;
+		const tempLvlArr = lvlUpCriteriaArr.filter((lvl) => investedMsAKAXP >= lvl.runningExpTotal);
+		currentLvlStats = tempLvlArr[tempLvlArr.length - 1];
+		currentLvl = currentLvlStats.lvl;
 		currentLvlStats = lvlUpCriteriaArr[currentLvl];
 		nextLvlStats = lvlUpCriteriaArr[currentLvl + 1];
 		currentLvlXPBase = investedMsAKAXP - currentLvlStats.runningExpTotal;
