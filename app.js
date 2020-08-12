@@ -59,8 +59,8 @@ const updateStats = async () => {
 
 const animateBar = async (barValue) => {
 	await lvlUpBar(100, 0);
-	await lvlUpBar(0, 500);
-	await lvlUpBar(barValue, 800);
+	await lvlUpBar(0, 250);
+	await lvlUpBar(barValue, 600);
 };
 
 const lvlUpBar = (barValue, delay) => {

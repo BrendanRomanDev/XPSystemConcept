@@ -91,70 +91,44 @@ input:focus {
 	);
 }
 
-.icon {
-	position: relative;
-	overflow: hidden;
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-
-	margin: 25px 0 25px 25px;
-	border-radius: 5px;
-	color: #fff;
-	text-decoration: none;
-	text-align: center;
-	line-height: 50px;
-	font-size: 12px;
-	font-family: sans-serif;
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: .5em 1em;
 }
 
-.icon:nth-child(1) {
-	background: cornflowerblue;
-}
-.icon:nth-child(2) {
-	background: salmon;
-}
-.icon:nth-child(3) {
-	background: gray;
-}
 
-/**
- * The "shine" element
- */
+$colors: (
+  pulse: #9bc0ba, 
+);
 
-.icon:after {
-	content: "";
-	position: absolute;
-	top: -110%;
-	left: -210%;
-	width: 200%;
-	height: 200%;
-	opacity: 0;
-	transform: rotate(30deg);
-
-	background: rgba(255, 255, 255, 0.13);
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.13) 0%,
-		rgba(255, 255, 255, 0.13) 77%,
-		rgba(255, 255, 255, 0.5) 92%,
-		rgba(255, 255, 255, 0.0) 100%
-	);
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 10deg)};
+  }
 }
 
-/* Hover state - trigger effect */
-
-.icon:hover:after {
-	opacity: 1;
-	top: -30%;
-	left: -30%;
-	transition-property: left, top, opacity;
-	transition-duration: 0.7s, 0.7s, 0.15s;
-	transition-timing-function: ease;
+button {  
+  color: var(--color);
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: #d88373;
+  }
 }
 
-/* Active state */
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 1em rgba(#fff,0);
+}
 
-.icon:active:after {
-	opacity: 0;
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
 }
