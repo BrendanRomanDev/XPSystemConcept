@@ -1,3 +1,14 @@
+/// HOW IT WORKS ///
+
+Log Hours And Minutes in the top two boxes. Time will get converted to XP, and the UI will reflect user progresss.
+
+Ignore the 2 bottom Input Boxes - these are for testing Max Hours Allowed, and A Level-Cap respectively.
+"400" indicates 400 hours to reach max level.
+"100" indicates the max level, which will be 100.
+
+
+
+
 ///Resources Used///
 
 Framework: 
