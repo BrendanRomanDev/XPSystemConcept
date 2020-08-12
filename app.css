@@ -1,0 +1,73 @@
+*:focus {
+	outline-style: none;
+}
+
+body {
+	font-family: "Recursive", sans-serif;
+	background-color: #424b54;
+	width: 100vw;
+	height: 100vh;
+}
+
+input:focus {
+	outline: none;
+}
+
+.input-card {
+	margin: 20px auto;
+	max-width: 400px;
+	border: none;
+}
+
+.input-card .card-header {
+	letter-spacing: 5px;
+	background-color: #69a197;
+	color: #f2edeb;
+	font-size: 1.3rem;
+}
+
+.result-card {
+	margin: 40px auto;
+	max-width: 400px;
+	border: none;
+}
+
+.result-card .card-header {
+	letter-spacing: 5px;
+	background-color: #d88373;
+	font-size: 1.3rem;
+}
+
+.card-body {
+	background-color: #dde0e4;
+}
+
+.form-control,
+.form-control:focus {
+	border-color: inherit;
+	box-shadow: none;
+	background-color: #ffffff;
+	border: solid 2px #424b54;
+}
+
+.btn-light {
+	background-color: #9bc0ba;
+}
+.btn-light:hover {
+	background-color: #f2edeb !important;
+}
+
+.btn-light:active {
+	background-color: #dfd2ce !important;
+}
+.btn-light:focus {
+	background-color: #dfd2ce !important;
+}
+
+.progress {
+	height: 25px;
+}
+
+.progress-bar {
+	background-color: #687d5c;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card input-card">
+            <div class="card-header font-weight-bold text-center">
+                TIME LOG
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="hrInput">Hours</label>
+                        <input class="form-control" name="hours" placeholder="0" type="number" min="0" id="hrInput">
+                    </div>
+                    <div class="col-6">
+                        <label for="minInput">Minutes</label>
+                        <input class="form-control" name="minutes" placeholder="0" type="number" min="0" max="59"
+                            id="minInput">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <input class="form-control" name="targetHrs" placeholder='Max Hours' value="400" type="number"
+                            min="0" id="targetHrs">
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control" name="targetLvls" placeholder='# of Levels' value="100"
+                            type="number" min="0" id="targetLvls">
+                    </div>
+                </div>
+                <div class="row mt-3 justify-content-center">
+                    <button type='button' class="btn btn-light" id="timeLogBtn">
+                        Log Time
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card result-card">
+            <div class="card-header font-weight-bold text-center">
+                PLAYER STATS
+            </div>
+            <div class="card-body text-center px-4">
+                <div class="col mb-3">
+                    <h4>
+                        Level: <span id="currentLvlField">0</span>
+                    </h4>
+                </div>
+                <div class="col">
+                    Invested Time: <span id="investedTimeField">0</span>
+                </div>
+                <div id="lvlXPStatField" class="col my-3 px-2">
+                    XP: Log time to begin...
+                </div>
+                <div id="percentCompleteField" class="col my-3 px-2">
+                    0%
+                </div>
+                <div class="progress mb-4">
+                    <div class="loading-item-1 progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                    </div>
+                </div>
+
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+            <script src="app.js"></script>
+</body>
+
+</html>
