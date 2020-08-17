@@ -1,10 +1,10 @@
 https://brendanromandev.github.io/XPSystemConcept/
 
-This is a concept/test application made to assist in developing the algorithm and UI Animations involved in my React JS habit tracking application.
+This is a concept/test application made to assist in developing the Experience Point Generation algorithm and UI Animations involved in my React JS habit tracking application.
 
 ## HOW IT WORKS
 
-Log Hours And Minutes in the top two boxes. Time will get converted to XP, and the UI will reflect user progresss.
+Log Hours And Minutes in the top two boxes. Time will get converted to XP, and the UI will reflect user level and progress stats.
 ![TIMELOG IMAGE](https://i.imgur.com/Iid4dR1.png)
 
 You can Ignore the 2 bottom Input Boxes - these are for testing Max Hours Allowed, and A Level-Cap respectively.
