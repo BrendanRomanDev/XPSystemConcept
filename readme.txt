@@ -1,18 +1,16 @@
 https://brendanromandev.github.io/XPSystemConcept/
 
-/// HOW IT WORKS ///
+## HOW IT WORKS
 
 Log Hours And Minutes in the top two boxes. Time will get converted to XP, and the UI will reflect user progresss.
+![TIMELOG IMAGE](https://i.imgur.com/Iid4dR1.png)
 
-Ignore the 2 bottom Input Boxes - these are for testing Max Hours Allowed, and A Level-Cap respectively.
+You can Ignore the 2 bottom Input Boxes - these are for testing Max Hours Allowed, and A Level-Cap respectively.
 "400" indicates 400 hours to reach max level.
 "100" indicates the max level, which will be 100.
+![OUTPUT IMAGE](https://i.imgur.com/phHMz63.png)
 
-
-
-
-///Resources Used///
-
+## Resources Used
 Framework: 
    - Bootstrap & Pure CSS
     https://getbootstrap.com/
